@@ -1,0 +1,276 @@
+Revisão geral
+
+Desenvolvimento Web:
+HTML
+CSS
+JAVASCRIPT (Na ordem)
+
+- HTML(HYPERTEXT MARKUP LANGUAGE):
+tags:linguagens de marcações, etiquetas. <>inicia </>encerra
+
+<head> cabeça inicia
+</>head> cabeça termina
+<body> corpo inicia
+</body> corpo termina
+<title> titulo inicia
+</title> termina
+<h1> titulo dentro do <body>
+</h1> titulo dentro do <body> termina
+<p> paragrafo começa
+</p> paragrafo termina
+<p> <a href="valor"> </a>link .</p>
+<a> link
+<imag/>
+<h1> até <h6> títulos
+<button> botão
+<input>Campo de entrada
+<form> formulário
+<div> divisão genérica
+<section> seção
+<header> cabeçalho
+<footer> rodapé
+
+
+exemplo EASY:
+
+<html>
+     <head>
+          <title>Meu primeiro site</title>
+</head>
+<body>
+     <h1>Bem vindo ao meu site</h1>
+     <p>Veja que belo exemplo de HTML.</p>
+     <p>Visite o site da <a href="https://www.google.com/">Google</a>.</p> 
+</body>
+</html> 
+
+
+
+CSS (CASCADING STYLE SHEETS):
+
+Aparência da página
+realizar alterações:
+- cores
+- fontes
+- tamanho
+- espaçamento
+- animações
+- posicionamento
+- responsividade
+
+Exemplo:
+
+</> CSS
+
+body{
+     background-color: #f5f5f5;
+     font-family: Arial;
+
+}
+
+h1{
+  
+    color: blue;
+}
+
+button{
+    background-color:green;
+    color:white;
+}
+
+FORMAS DE USAR CSS:
+inline
+HTML
+<p style="color:red;"Texto</p>
+
+interno
+HTML
+<style>
+p{
+    color:red;
+}
+</style>
+
+externo(mais recomendado)
+HTML
+<lik rel="stylesheet" href="style.css">
+
+SELETORES:
+</> CSS
+
+p{
+}
+#titulo{
+}
+
+.menu{
+}
+
+button:hover{
+}
+
+
+JAVA SCRIPT
+responsável pela interatividade da página.
+com java script podemos:
+- criar cálculos
+- validar formulários
+- fazer animações
+- consumir APIs
+- alterar HTML
+- responder aos cliques do usuário
+
+VARIÁVEIS
+</> JavaScript
+
+let nome = "Sara";
+const idade = 20;
+
+CONDIÇÃO
+</> JavaScript
+if(idade >=18){
+    console.log("Maior de idade");
+}else}
+    console.log("Menor");
+}
+
+LAÇO
+</> JavaScript
+for(let i=1;i<=5;i++){
+    console.log(i);
+}
+
+FUNÇÃO
+</> JavaScript
+function soma(a,b){
+    return a+b;
+}
+
+console.log(soma(5,3));
+
+EVENTOS
+</> JavaScript
+function mensagem(){
+    alert("Olá!");
+}
+
+HTML
+<button onclick="mensagem()">Clique</button>
+
+
+DOM (Document Object Model):
+é a representação do HTML em forma de objetos. Ele permite que o JavaScript acesse e modifique elementos da página.
+
+Exemplo:
+HTML
+<h1 id="titulo">Bem-vindo</h1>
+
+JavaScript
+let titulo = document.getElementById("titulo");
+titulo.innerHTML = "Olá Sara!";
+
+Resultado:
+Antes: Bem-vindo
+Depois: Olá Sara!
+
+Selecionando elementos
+por id
+
+JavaScript
+document.getElementById("titulo");
+por classe
+document.getElementsByClassName("caixa");
+por tag
+document.getElementByTagName("p");
+mais moderno
+document.querySelector(".menu");
+todos
+documento.querySelectorAll("li");
+alterando conteúdo
+elemento.innerHTML = "Novo texto";
+ou
+elemento.textContent = "Novo texto";
+
+ALTERANDO CSS
+javascript
+elemento.style.color = "red";
+elemento.style.background = "yellow";
+
+alterando atributos
+javascript
+imagem.src ="foto.jpg";
+ou
+link.href = "https://google.com";
+
+CRIANDO ELEMENTOS
+javaScript
+let p = document.createElement("p");
+
+p.textContent = "Novo parágrafo";
+
+document.body.appendChild(p);
+
+REMOVENDO ELEMENTOS
+javaScript
+elemento.remove()
+
+Eventos
+clique
+javaScript
+botao.addEventListener("click", function(){
+    alert("Você clicou!");
+});
+mouse
+mouseover
+mouseout
+
+teclado
+keydown
+keyup
+
+EXEMPLO COMPLETO
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+     <title>DOM</title>
+</head>
+<body>
+
+<h1 id="titulo">Olá</h1>
+
+<button id="botão">Clique</button>
+
+</body>
+</html>
+
+JavaScript
+
+const botão = document.getElementById("botão");
+
+botão.addEventListener("click", function(){
+
+      document.getElementById("titulo").innerHTML = "Você clicou no botão!";
+});
+
+HTML: estrutura da página (conteúdo)
+CSS: aparência e estilo da página
+JAVASCRIPT:Lógica, comportamento e interatividade
+DOM: Interface que permite ao JavaScript acessar e modificaros elementos do HTML.
+
+DICAS
+HTML=CONSTROI A CASA(ESTRUTURA)
+CSS= PINTA E DECORA A CASA(ESTILO
+JAVASCRIPT= FAZ A CASA FUNCIONAR(INTERATIVIDADE)
+DOM= PERMITE QUE O JV ENTRE NA CASA E ALTERE MOVEIS, PAREDES E OBJETOS ENQUANTO A PAGINA ESTA ABERTA.
+
+
+1	HTML: estrutura, textos, imagens, links, listas, formulários.
+2	CSS: cores, fontes, espaçamentos, Flexbox e layout responsivo.
+3	JavaScript: variáveis, operadores, condições, laços, funções e arrays.
+4	DOM: seleção de elementos, eventos, manipulação do HTML/CSS e projeto prático (lista de tarefas).
+
+
+
+
